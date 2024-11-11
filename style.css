@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(228, 95, 95, 0.932);
+    color: aliceblue;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(238, 163, 163);
+    text-align: center;
+    margin-left: 19em;
+    margin-right: 19em;
+    margin-top: 9em;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+
+
+button {
+    margin-top: 30px;
+    height: 30px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #f0ffff;
+    font-size: 20px;
+}
+
+input {
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 4px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #960000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #dc143c;
+    border-radius: 20px;
+}
+
+.galeria {
+    margin: 2em;
+    display: flex;
+    height: 20em;
+    gap: 0.1em;
+}
+
+
+.galeria div {
+    flex: 1;
+    background-size: cover;
+    background-position: center center;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.galeria div:hover {
+    flex: 3;
+}
+
+.galeria:hover div:not(:hover) {
+    filter: opacity(20%);
+}
